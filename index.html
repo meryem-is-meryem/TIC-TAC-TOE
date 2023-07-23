@@ -1,0 +1,90 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+    .fa-close, .fa-circle-o {
+        color: #eff315;/* Replace this with your desired dark yellow color code */
+    }
+
+    /*.cells {
+        background-color: #ADD8E6; /* Replace this with your desired light blue color code */
+
+
+</style>
+</head>
+    <!--begin game-->
+<body>
+<!--begin game-->
+<div id="overlay">
+    <div id="message">
+        <div id="close">
+            <i class="fa fa-times"></i>
+        </div>
+        <div class="content">x is the <h2>winner</h2></div>
+        <!--it didn't work out this fontawsom fix it later-->
+    </div>
+</div>
+<div class="container">
+    <div class="tools">
+        <div class="symbols">
+            <i class="fa fa-times"></i>
+            <i class="fa fa-circle-o-notch"></i>
+        </div>
+        <div class="turn">
+            <span class="current-turn"></span>turn
+        </div>
+         <div class="reset">
+            <div class="button">
+                <i class="fa fa-rotate-right"></i>
+            </div>
+         </div>
+
+   </div>
+    <div class="board">
+        <div class="cells">
+            <div class="cell"></i></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="cells">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+        <div class="cells">
+            <div class="cell"></div>
+            <div class="cell"></div>
+            <div class="cell"></div>
+        </div>
+    </div>
+
+    <div class="stat">
+        <div class="player">
+            <label >player 1</label>
+            <span class="scor1">0</span>
+        </div>
+
+       <div class="draws">
+         <label > draw </label>
+        <span class="draw">0</span>
+       </div>
+        <div class="player">
+            <label >player 2</label>
+            <span class="scor2">0</span>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--end game-->
+    <script src="game.js"></script>
+</body>
+</html>
