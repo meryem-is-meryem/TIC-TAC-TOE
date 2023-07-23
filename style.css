@@ -1,5 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* ... Your existing CSS code ... */
 
+/* Add media queries for smaller screen sizes */
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 90%; /* Reduce the width of the container for smaller screens */
+    height: 90vh;
+    font-size: 1em; /* Adjust the font size for smaller screens */
+  }
+  .tools,
+  .stat {
+    width: 100%;
+    height: auto; /* Adjust the height for smaller screens */
+    flex-direction: column; /* Stack the tools and stats vertically on smaller screens */
+    border-radius: 0; /* Remove border radius for smaller screens */
+    padding: 20px; /* Add some padding for smaller screens */
+  }
+  .cells {
+    flex-wrap: wrap; /* Wrap the cells to multiple rows for smaller screens */
+  }
+  .cell {
+    width: 30%; /* Adjust the width of the cells for smaller screens */
+    height: 100px; /* Adjust the height of the cells for smaller screens */
+    font-size: 5em; /* Adjust the font size for smaller screens */
+  }
+}
+
+/* ... Your existing CSS code ... */
 *{
     padding: 0;
     margin: 0;
