@@ -1,32 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 /* ... Your existing CSS code ... */
 
-/* Add media queries for smaller screen sizes */
-@media only screen and (max-width: 600px) {
-  .container {
-    width: 90%; /* Reduce the width of the container for smaller screens */
-    height: 90vh;
-    font-size: 1em; /* Adjust the font size for smaller screens */
-  }
-  .tools,
-  .stat {
-    width: 100%;
-    height: auto; /* Adjust the height for smaller screens */
-    flex-direction: column; /* Stack the tools and stats vertically on smaller screens */
-    border-radius: 0; /* Remove border radius for smaller screens */
-    padding: 20px; /* Add some padding for smaller screens */
-  }
-  .cells {
-    flex-wrap: wrap; /* Wrap the cells to multiple rows for smaller screens */
-  }
-  .cell {
-    width: 30%; /* Adjust the width of the cells for smaller screens */
-    height: 100px; /* Adjust the height of the cells for smaller screens */
-    font-size: 5em; /* Adjust the font size for smaller screens */
-  }
+.container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tools,
+.stat {
+  width: 80%; /* Adjust the width of the tools and stats for better mobile display */
+  max-width: 400px; /* Limit the maximum width for smaller screens */
+}
+
+.cells {
+  display: grid; /* Use CSS Grid for better cell layout */
+  grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+  gap: 10px; /* Add some spacing between cells */
+  max-width: 400px; /* Limit the maximum width for smaller screens */
+}
+
+.cell {
+  width: 100%; /* Adjust the width of the cells to fill the grid column */
+  height: 100px; /* Adjust the height of the cells for better mobile display */
+  font-size: 3em; /* Adjust the font size for better mobile display */
 }
 
 /* ... Your existing CSS code ... */
+
 *{
     padding: 0;
     margin: 0;
